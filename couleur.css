@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900& display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:300&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+    box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  background: white;
+  color: black;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+section {
+  height: auto;
+  width: auto;
+  min-height: 100vh;
+  padding: 220px 100px 20px;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top:0 ;
+  left: 0;
+  background:white;
+  width: 100%;
+  padding:0rem 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  
+}
+.header-white {
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+
+  cursor: pointer;
+  padding: 0% 0% 0%;
+}
+
+.navbar a {
+  background-color: transparent;
+  font-size: 1.5rem;
+  color:rgb(0, 148, 191);
+  margin-left: 3rem;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color:rgb(255, 116, 116);
+}
+.home {
+  display: flex;
+  background-attachment:local;
+  background: url(ji1.jpg);
+  justify-content: left;
+
+}
+.home-content h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: left;
+  color: white;
+}
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 3rem;
+}
+.home-content h1 {
+  text-align: left;
+  font-size: 5rem;
+  font-weight: 500px;
+  line-height: 1.1;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+.home-content p {
+  color: white;
+  text-align: left;
+  font-size: 2rem;
+}
+.home-content .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border-radius: 3rem;
+  border: 3px solid white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  transition: 0.5s ease;
+  margin-top: 20;
+  font-style:oblique;
+  font-weight: bold;
+}
+.home-content .btn:hover{
+  box-shadow: rgb(255, 0, 0);
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+  background-color: white;
+  color: rgb(0, 148, 191);
+}
+
+
+.comparison-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+
+}
+
+
+.comparison-card {
+  width: 600px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 100px;
+  margin: 1px;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.criteria {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: rgb(1, 83, 106);
+  text-align: center;
+    justify-content: space-evenly;
+}
+.motor-advantage,
+.motor-benefit {
+  font-size: 1.5rem;
+  margin: 20px;
+  border-radius: 800px;
+  padding: 20px;
+}
+
+.motor-advantage {
+  background-color: #ffc2b3; /* Lighter red for disadvantages */
+  color: #d8000c;
+  font-weight: bold;
+  text-align: center;
+}
+
+.motor-benefit {
+  background-color: #c2e0c2; /* Lighter green for benefits */
+  color: #006b00;
+  font-weight: bold;
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-wrap: initial;
+  gap: 2rem;
+}
+.services-container .services-box {
+  flex: 1 1 150rem;
+  background: url(yeRab.png);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.services-container .services-box :hover {
+  border-color: rgb(1, 150, 205);
+  transform: scale(1.2);
+}
+
+.services-box i {
+  color: #ffffff;
+  font-size: 40px;
+}
+.services-box h3 {
+  font-size: 2rem;
+  color: white;
+}
+.services-box p {
+  font-size: 1.5rem;
+  color: white;
+}
+/*applications */ 
+.modes-applications {
+  text-align: center;
+}
+
+
+.applications-grid {
+  display: inline-flex;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.application {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.application img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.application h3 {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.application:hover {
+  transform: translateY(-5px);
+}
+/*fin de l'application */
+
+/*  debut contact */
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #000000;
+  font-size: 2rem;
+}
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  background: rgb(220, 220, 220);
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+.contact form .input-box input {
+  width: 49% ;
+}
+.contact form textarea {
+  resize: none;
+}
+.contact form .btn {
+  margin-top: 3rem;
+  cursor: pointer;
+  color:white;
+  background-color:rgb(0, 148, 191);
+  font-size: 1.6rem;
+    border-radius: 4rem;
+      border: 3px solid white;
+        padding: 1rem 2.8rem;
+  }
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer_main {
+  width: 100%;
+  background:rgb(169, 169, 169);
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footer_main .tag {
+  margin: 10px 0;
+}
+footer .footer_main .tag .center {
+  text-align: center;
+}
+
+footer .footer_main .tag h1 {
+  font-size: 25px;
+  margin: 25px 0;
+  color: rgb(0, 148, 191);
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+    box-sizing: border-box;
+      font-family: sans-serif;
+      justify-content: center;
+      text-align: center;
+}
+
+
+ 
+footer .footer_main .tag a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin: 9px 0;
+  justify-content: center;
+  text-align: center;
+}
+
+footer .footer_main .tag a i {
+  padding: 0 10px;
+    transition: 0.7;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+footer .footer_main .tag .social_link {
+  display: flex;
+  justify-content: center;
+    text-align: center;
+}
+
+footer .footer_main .tag .social_link a {
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+    text-align: center;
+  border-radius: 100%;
+padding: 0% 0% 0% ;
+  margin: 0 10px  ;
+  
+
+  overflow: hidden;
+
+}
