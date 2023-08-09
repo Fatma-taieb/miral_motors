@@ -267,16 +267,16 @@
             Contactez-Nous
 
         </h2><br><br>
-        <form action="form.php" method="post">
+    <form action="https://formspree.io/f/mleyjglq" method="post">
             <div class="input-box">
-                <input type="text" placeholder="Nom et Prénom">
-                <input type="email" placeholder="Addresse e-mail">
+                <input type="text" placeholder="Nom et Prénom" name="pname"  required>
+                <input type="email" placeholder="Addresse e-mail"  name="nemail" required>
             </div>
             <div class="input-box">
-                <input type="tel" placeholder="Telephone">
-                <input type="text" placeholder="Sujet">
+                <input type="tel" placeholder="Telephone" name="telname"  required >
+                <input type="text" placeholder="Sujet"  name="sujname" required >
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Votre Message "></textarea>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Votre Message " name="mesname" required></textarea>
             <input type="Submit" value="Envoyer" class="btn">
         </form>
     </section>
@@ -352,8 +352,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
         crossorigin="anonymous"></script>
-
-
 
 </body>
 
