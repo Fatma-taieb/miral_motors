@@ -62,8 +62,9 @@ section {
 }
 
 .navbar a {
+    text-decoration: none;
     background-color: white;
-    font-size: 1.5rem;
+font-size: 1.65rem;
     color: rgb(0, 148, 191);
     margin-left: 3rem;
     transition: 0.3s;
@@ -71,7 +72,9 @@ section {
 
 .navbar a:hover,
 .navbar a.active {
-    color: rgb(255, 116, 116);
+    color:rgb(234, 12, 12);
+    text-decoration:underline;
+
 }
 .heading {
     text-align: center;
